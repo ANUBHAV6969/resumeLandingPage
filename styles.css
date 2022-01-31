@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    overflow-x: hidden;
+}
+.container{
+    display: grid;
+    grid-template-columns:repeat(1,100vw);
+    height: fit-content;
+    width: 100vw;
+    background-color:#E6D5B8;
+}
+.header{
+    height: 100vh;
+    width: 100vw;
+    background: #E45826;
+    background-blend-mode: darken;
+}
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+.mid-container{
+    width: 100vw;
+    max-height: 300vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.card{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+    margin-top: 5%;
+    border: 4px solid #4A3933;
+}
+
+.cardContent{
+    background-color: #F0A500;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+    color: #4A3933;
+    border: 4px solid  #4A3933;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.cardImageFrame{
+    background-color: #E45826;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+    border: 4px solid  #4A3933;
+}
+
+.cardImage{
+    height: 200px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.bttnContainer{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+    margin-top: 5%;
+}
+
+.nextBttn{
+    border: 4px solid #4A3933;
+    background-color: #F0A500;
+    color: #4A3933;
+    font-size: 15px;
+    font-family: 'Roboto Mono', 'Material Icons', monospace;
+    box-shadow: 2px 4px 4px #000000;
+    max-width: 40%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.nextBttn:active{
+    box-shadow: 1px 2px 2px #000000;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+.footer{
+    height: 40vh;
+    width: 100vw;
+}
