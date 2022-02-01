@@ -5,7 +5,9 @@
     list-style: none;
     text-decoration: none;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
+/* This is the main container containing all the elements it's grid and rest follows flex  */
 .container{
     display: grid;
     grid-template-columns:repeat(1,100vw);
@@ -18,6 +20,126 @@
     width: 100vw;
     background: #E45826;
     background-blend-mode: darken;
+    overflow: hidden;
+}
+.navbar{
+    width: 95vw;
+    height: 10vh;
+    margin:3% auto;
+    display: flex;
+    
+}
+.navbar .logo{
+    width:5vw ;
+    height:9vh;
+    position:flex-start;
+    background:url(logo.png) no-repeat;
+    background-size: contain;
+    background-position:center;
+}
+.navbar .navbar-brand{
+    width: 90vw;
+    display: flex;
+    align-items:center;
+    justify-content:flex-end;
+    font-size: 1.8rem;
+    color: #4A3933;
+}
+.header .header-mid{
+    display:gird;
+    grid-template-columns:repeat(1,90vw);
+    grid-gap: 3rem;
+    width: 90vw;
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.header .header-mid .tag-line{
+    font-size: 2rem;
+    color: #4A3933;
+    display: flex;
+    width: 90vw;
+    height: 5vh;
+    margin: 2% auto;
+    justify-content: center;
+    
+}
+.header .header-mid >.btn{
+    display: flex;
+    width: 13vw;
+    padding: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    background-color:#F0A500;
+    margin: auto;
+    filter: drop-shadow(0px 0px 35px  #4A3933);
+    
+   
+}
+.header .header-mid>.btn:hover{
+    background-color:#4A3933;
+    
+    
+}:hover{
+    color: #E6D5B8;
+}
+.header .header-mid .btn a:hover{
+    color: #E6D5B8;
+}
+.header .header-mid .btn a{
+   
+    color: #4A3933;
+    font-size: 1.2rem;
+
+}
+
+
+.header-bottom{
+    width: 95vw;
+    display:flex;
+    height: 45vh;
+    margin:auto;
+    font-family: 'Poppins',sans-serif;
+    scroll-behavior: smooth;
+}
+.header-bottom .item{
+    /* background:url(headrPic.png) no-repeat;
+    background-size: cover;
+    background-position:center; */
+    height: 43vh;
+    width: fit-content;
+}
+.header-bottom .item img{
+    height: 40vh;
+    width: 25vw;
+}
+.header-bottom .item-1{
+    height: 40vh;
+    width: 25vw;
+    display:flex;
+    align-items:flex-end;
+    justify-content: center;
+    margin: auto;
+}
+.header-bottom .item-1 i{
+    font-size: 4rem;
+    color: #E6D5B8;
+}
+.header-bottom .item-2{
+    height:fit-content;
+    width: fit-content;
+    padding: 1rem;
+    display:flex;
+    align-items:flex-end;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 3.5rem;
+}
+.header-bottom .item-2 i {
+    font-size: 4rem;
+    color: #4A3933;
 }
 /*------------------------------------------------------------------------------------------------------------------------------------*/
 
